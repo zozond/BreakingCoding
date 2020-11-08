@@ -1,0 +1,39 @@
+{
+  "name": "breakingcoding",
+  "version": "1.0.0",
+  "description": "Project for making my custom algorithm site",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zozond/BreakingCoding.git"
+  },
+  "author": "krpw11235788@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zozond/BreakingCoding/issues"
+  },
+  "homepage": "https://github.com/zozond/BreakingCoding#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "nunjucks": "^3.2.2",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-kakao": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-naver": "^1.0.6",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  }
+}

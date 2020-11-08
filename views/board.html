@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include "head.html" %}
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    {% include "nav.html" %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <table class="table table-list-search">
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>생성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in list %}
+                        <tr>
+                            <td><a href="/board/{{item.id}}">{{item.title}} </a></td>
+                            <td>{{item.author}}</td>
+                            <td>{{item.createdAt}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="/board/writing"> 글쓰기 </a>
+    </div>
+
+    <!-- <a href="/board/writing"> 글쓰기 </a>
+    
+    <table style="width: 60%; border: 1px; border-color: black;" >
+        <colgroup>
+            <col style="width:60%">
+            <col style="width:20%">
+            <col style="width:20%">
+        </colgroup>
+        <thead>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>생성일</th>
+        </thead>
+        <tbody>
+            {% for item in list %}
+                <tr>
+                    <td>{{item.title}}</td>
+                    <td>{{item.author}}</td>
+                    <td>{{item.createdAt}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table> -->
+</body>
+
+</html>
